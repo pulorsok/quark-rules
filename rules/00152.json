@@ -15,7 +15,7 @@
             "method": "sendTextMessage"
         }
     ],
-    "score": -0.31,
+    "score": -0.32,
     "label": [
         "command",
         "sms"
