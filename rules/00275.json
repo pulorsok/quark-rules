@@ -1,11 +1,11 @@
 {
-    "crime": "Modify PopupWindow width and invoke a method via reflection",
+    "crime": "Check notification permissions via reflection",
     "permission": [],
     "api": [
         {
-            "class": "Landroid/widget/PopupWindow;",
-            "method": "setWidth",
-            "descriptor": "(I)V"
+            "class": "Landroid/app/NotificationManager;",
+            "method": "areNotificationsEnabled",
+            "descriptor": "()Z"
         },
         {
             "class": "Ljava/lang/reflect/Method;",
@@ -13,9 +13,10 @@
             "descriptor": "(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;"
         }
     ],
-    "score": 2.4,
+    "score": -2.82,
     "label": [
+        "notification",
         "reflection",
-        "control"
+        "permission"
     ]
 }
